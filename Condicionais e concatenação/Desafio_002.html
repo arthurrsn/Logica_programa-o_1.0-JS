@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let diaSemana = prompt('qual é o dia da semana?');
+            console.log(`USER diaSemana(var) --> ${diaSemana}`);
+
+            if (diaSemana == 'Sábado' || diaSemana == 'Domingo') {
+                console.log('Fim de semana --> True');
+                console.log('Semanal --> False');
+                alert('Bom fim de semana!');
+            } else if (diaSemana == 'Segunda' || diaSemana == 'Terça' || diaSemana == 'Quarta' || diaSemana == 'Quinta' || diaSemana == 'Sexta') {
+                console.log('Semanal --> True');
+                console.log('Fim de semana --> False');
+                alert('Boa semana!');
+            } else {
+                console.log('Semanal --> False');
+                console.log('Fim de semana --> False');
+                alert('QUE POHA É ESSA??????')
+            };
+
+        });
+    </script>
+    <h1>Desafio 002</h1>
+    <p>Pergunte ao usuário qual é o dia da semana. Se a resposta for "Sábado" ou "Domingo", mostre "Bom fim de semana!". Caso contrário, mostre "Boa semana!"</p>
+    
+</body>
+</html>
