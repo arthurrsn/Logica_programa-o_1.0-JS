@@ -1,11 +1,11 @@
 alert('Seja bem vindo(a) ao NUMBER SECRET');
 
-// Declarando Secretnumber e colocando ele no console do browser
+// Declarando variaveis
 let pergunta;
 let dica;
 let Secretnumber
 let contagem = 0;
-let teto = 100
+let teto = 1000
 
 
 console.log(Secretnumber);
@@ -14,7 +14,7 @@ console.log(Secretnumber);
 // Enquanto a pergunta for difgrente do Secretnumber ele continuara o loop
 while(true){
     // Gerando numero aleatorio
-    Secretnumber = parseInt(Math.random() * teto + 1);
+    Secretnumber = parseInt(Math.random() * teto) + 1;
 
     while (true) {
         // Executando novamente a pergunta
